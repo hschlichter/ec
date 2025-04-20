@@ -14,7 +14,7 @@ Template-based Entity-Component-(System) - Single file EC.hpp
 3. Attach components: add_component<ComponentType>(world, entity, componentData).
 4. Access components: auto* ptr = get_component<ComponentType>(world, entity).
 5. Iterate entities with specific components:
-    query<CompA, CompB>(world, [](Entity e, CompA* a, CompB* b) {  });
+    `query<CompA, CompB>(world, [](Entity e, CompA* a, CompB* b) { ... });`
 
 ## Note:
 - There is no built-in system abstraction. Write systems as free functions or lambdas that call query<...>().
