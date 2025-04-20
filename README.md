@@ -9,7 +9,7 @@ Template-based Entity-Component-(System) - Single file EC.hpp
 - No archetypes, focus on being as cache friendly as possible.
 
 ## Usage:
-1. Create a ecs::World instance.
+1. Create a ec::World instance.
 2. Manage entities with create_entity(world) and destroy_entity(world, entity).
 3. Attach components: add_component<ComponentType>(world, entity, componentData).
 4. Access components: auto* ptr = get_component<ComponentType>(world, entity).
@@ -22,6 +22,9 @@ Template-based Entity-Component-(System) - Single file EC.hpp
 Example
 ```cpp
 #include <iostream>
+#include "ec.hpp"
+
+using namespace ec;
 
 struct Position { float x, y; };
 struct Velocity { float vx, vy; };
