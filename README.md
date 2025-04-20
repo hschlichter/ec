@@ -1,5 +1,5 @@
-# ec.hpp
-EC.hpp - Template-based Entity-Component-(System)
+# Simple EC(S)
+Template-based Entity-Component-(System) - Single file EC.hpp
 
 ## Benefits:
 - Data-oriented design: component data stored contiguously in memory for cache-efficient access.
